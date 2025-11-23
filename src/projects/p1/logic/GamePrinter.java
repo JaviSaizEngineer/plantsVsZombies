@@ -28,7 +28,7 @@ public class GamePrinter {
                     }
                     str=str.concat(vDelimiter);
                 }
-            str = str.concat("%n");
+                str = str.concat("\n");
         }
 
         return str;

@@ -19,7 +19,10 @@ public class Controller {
     public void run(){
         while(!finalizarPartida){
             gamePrinter= new GamePrinter(this.game);
-            System.out.println(game.toString());
+            System .out.println("Number of cycles: " + this.game.getContadorCiclos());
+            System .out.println("Sun coins: " + this.game.getNumSoles());
+            System .out.println("Remaining zombies: "+"\n");
+            System.out.println(gamePrinter.toString());
             System.out.print("Command > ");
             in = new Scanner(System.in);
             command = in.nextLine();
