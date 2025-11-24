@@ -38,4 +38,8 @@ public class Peashooter {
     public void setCoordY(int coordY) {
         this.coordY = coordY;
     }
+
+    public int getIdPeashooter(){
+        return this.idPeashooter;
+    }
 }

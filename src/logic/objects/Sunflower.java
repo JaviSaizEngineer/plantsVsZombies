@@ -40,4 +40,8 @@ public class Sunflower {
     public void setCoordY(int coordY) {
         this.coordY = coordY;
     }
+
+    public int getIdSunflower(){
+        return this.idSunflower;
+    }
 }

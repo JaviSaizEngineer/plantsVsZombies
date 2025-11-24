@@ -7,30 +7,30 @@ public class GamePrinter {
         this.game=game;
     }
 
-    public String toString(){
+    public String toString() {
+        int rows = 4;
+        int cols = 8;
         int cellSize = 7;
-        String space = " ";
-        String vDelimiter = "|";
-        String hDelimiter = "-";
-        String str = "";
 
-        for(int i=0;i<9;i++){
-                if(i%2==0){
-                    str = str.concat(space);
-                    for(int j=0;j<8;j++) {
-                        str = str.concat(MyStringUtils.repeat(hDelimiter, 10));
-                    }
-                }
-                else{
-                    for(int j=0;j<8;j++) {
-                        str = str.concat(vDelimiter);
-                        str = str.concat(MyStringUtils.repeat(space,9));
-                    }
-                    str=str.concat(vDelimiter);
-                }
-                str = str.concat("\n");
+        StringBuilder sb = new StringBuilder();
+
+        String hLine = MyStringUtils.repeat("-", 63);
+        String spaces = MyStringUtils.repeat(" ", cellSize);
+
+        for (int i = 0; i < rows; i++) {
+            sb.append(" ");
+            sb.append(hLine);
+            sb.append("\n");
+            for (int j = 0; j < cols; j++) {
+                sb.append("|");
+                sb.append(spaces);
+            }
+            sb.append("|\n");
         }
+        sb.append(" ");
+        sb.append(hLine);
+        sb.append("\n");
 
-        return str;
+        return sb.toString();
     }
 }

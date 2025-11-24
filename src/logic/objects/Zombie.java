@@ -39,4 +39,8 @@ public class Zombie {
     public void setCoordY(int coordY) {
         this.coordY = coordY;
     }
+
+    public int getIdZombie(){
+        return this.idZombie;
+    }
 }

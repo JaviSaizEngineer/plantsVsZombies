@@ -3,21 +3,30 @@ package logic.lists;
 import logic.Game;
 import logic.objects.Zombie;
 
+import java.util.ArrayList;
+import java.util.Iterator;
+
 public class ZombieList {
-    private Zombie[] arrayZmobies;
+    private ArrayList<Zombie> arrayZombies;
     private Game game;
-    private int numZombies;
 
     public ZombieList(Game game) {
         this.game = game;
-        this.arrayZmobies = new Zombie[5];
-        this.numZombies = 0;
+        this.arrayZombies = new ArrayList<>();
     }
 
     public void addZombie(Zombie zombie){
-        if(this.numZombies < 5){
-            arrayZmobies[this.numZombies] = zombie;
-            this.numZombies++;
+        this.arrayZombies.add(zombie);
+    }
+
+    public void removeZombie(int idZombie){
+        Iterator<Zombie> it = arrayZombies.iterator();
+
+        while(it.hasNext()){
+            Zombie z = it.next();
+            if(z.getIdZombie() == idZombie){
+                it.remove();
+            }
         }
     }
 
