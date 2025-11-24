@@ -1,7 +1,7 @@
-package projects.p1.logic.lists;
+package logic.lists;
 
-import projects.p1.logic.Game;
-import projects.p1.logic.objects.Peashooter;
+import logic.Game;
+import logic.objects.Peashooter;
 
 public class PeashooterList {
     private Peashooter arraySunflowers[];

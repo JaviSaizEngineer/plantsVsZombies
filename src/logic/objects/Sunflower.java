@@ -1,25 +1,24 @@
-package projects.p1.logic.objects;
+package logic.objects;
 
-import projects.p1.logic.Game;
+import logic.Game;
 
 public class Sunflower {
-    private int idSunflower;
-    private int coste;
-    private int resistencia;
-    private int frecuencia;
-    private int danio;
+    private Game game;
+    private static int numSunflowers = 0;
+    private final int idSunflower;
+    public final static int COSTE = 20;
+    public final static int RESISTENCIA = 1;
+    public final static int FRECUENCIA = 10;
+    public final static int DANIO = 0;
     private int coordX;
     private int coordY;
-    private Game game;
 
     public Sunflower(Game game, int coordX, int coordY){
         this.game = game;
-        this.coste = 20;
-        this.resistencia = 1;
-        this.frecuencia = 10;
-        this.danio = 0;
         this.coordX = coordX;
         this.coordY = coordY;
+        this.idSunflower = numSunflowers;
+        numSunflowers++;
     }
 
     public String toString() {

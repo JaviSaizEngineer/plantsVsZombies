@@ -1,4 +1,4 @@
-package projects.p1.myStringUtils;
+package myStringUtils;
 
 public class MyStringUtils {
     public static String repeat(String elmnt, int length) {

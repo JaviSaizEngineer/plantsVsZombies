@@ -1,24 +1,22 @@
-package projects.p1.logic.objects;
+package logic.objects;
 
-import projects.p1.logic.Game;
+import logic.Game;
 
 public class Peashooter {
     private Game game;
-    private int idPeashooter;
-    private int coste;
-    private int resistencia;
-    private int frecuencia;
-    private int danio;
+    private static int numPeashooters = 0;
+    private final int idPeashooter;
+    public final static int COSTE = 50;;
+    public final static int RESISTENCIA = 3;
+    public final static int FRECUENCIA = 1;
+    public final static int DANIO = 1;
     private int coordX;
     private int coordY;
 
     public Peashooter(Game game, int coordX, int coordY){
         this.game = game;
-        this.coste = 50;
-        this.resistencia = 3;
-        this.frecuencia = 1;
-        this.danio = 1;
-
+        this.idPeashooter = numPeashooters;
+        numPeashooters++;
     }
 
     public String toString() {

@@ -1,5 +1,5 @@
-package projects.p1.logic;
-import projects.p1.myStringUtils.MyStringUtils;
+package logic;
+import myStringUtils.MyStringUtils;
 
 public class GamePrinter {
     private Game game;

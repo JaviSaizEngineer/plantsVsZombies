@@ -1,7 +1,7 @@
-package projects.p1.control;
+package control;
 
-import projects.p1.logic.Game;
-import projects.p1.logic.GamePrinter;
+import logic.Game;
+import logic.GamePrinter;
 
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-package projects.p1.logic;
+package logic;
 
 public class ZombieManager {
     private int numZombiesPorSalir;

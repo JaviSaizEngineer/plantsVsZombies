@@ -1,8 +1,7 @@
-package projects.p1.plantsVsZombies;
+package plantsVsZombies;
 
-import projects.p1.control.Controller;
-import projects.p1.logic.Game;
-import projects.p1.logic.GamePrinter;
+import control.Controller;
+import logic.Game;
 
 public class PlantsVsZombies {
     public static void main(String[] args) {

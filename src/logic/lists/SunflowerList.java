@@ -1,7 +1,7 @@
-package projects.p1.logic.lists;
+package logic.lists;
 
-import projects.p1.logic.Game;
-import projects.p1.logic.objects.Sunflower;
+import logic.Game;
+import logic.objects.Sunflower;
 
 public class SunflowerList {
     private Sunflower arraySunflowers[];

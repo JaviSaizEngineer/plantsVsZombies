@@ -1,8 +1,8 @@
-package projects.p1.logic;
+package logic;
 
-import projects.p1.logic.lists.PeashooterList;
-import projects.p1.logic.lists.SunflowerList;
-import projects.p1.logic.lists.ZombieList;
+import logic.lists.PeashooterList;
+import logic.lists.SunflowerList;
+import logic.lists.ZombieList;
 
 import java.util.Random;
 
