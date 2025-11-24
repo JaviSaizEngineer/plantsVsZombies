@@ -20,7 +20,7 @@ public class Peashooter {
     }
 
     public String toString() {
-        return "Z [" + this.idPeashooter+ "]";
+        return "P [" + this.idPeashooter+ "]";
     }
 
     public int getCoordX(){
